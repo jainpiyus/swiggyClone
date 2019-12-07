@@ -1,0 +1,186 @@
+.single-restaurant-container{
+    margin-top: 80px;
+    width: 100%;
+}
+
+.header-container {
+    //padding: 0 20px;
+    z-index: 0;
+    background-color: #171a29;
+    padding: 10px 20px;
+    color: #fff;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    transition: transform .3s ease;
+    margin: 0 auto;
+  
+    position: relative;
+    .img-box{
+        flex: 1;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .description-box{
+        flex: 3;
+        padding: 0 55px;
+        color: #fff;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        .name{
+            max-width: 538px;
+            margin: 0;
+            font-weight: 300;
+            font-size: 32px;
+        }
+        .rating-box{
+            margin-top: 20px;
+            display: flex;
+            .box{
+                padding: 0 35px;
+                border-right: 1px solid hsla(0,0%,100%,.2);
+                .upper-box{
+                    color: inherit;
+                    font-weight: 600;
+                    font-size: 16px;
+                    height: 25px;
+                }
+                .lower-box{
+
+                }
+            }
+            .box:first-child{
+                padding-left: 0;
+                padding-right: 35px;
+            }
+            .box:last-child{
+                border-right: none;
+                padding-left: 35px;
+                padding-right: 0;
+            }
+
+        }
+    }
+    .offer-box{
+        flex: 1.5;
+        color: inherit;
+        width: 298px;
+        padding: 74px 0 48px;
+        height: 100%;
+        .container{
+            transform: translateZ(0);
+            transition: transform .2s ease-in-out;
+            border: 1px solid #bec0c8;
+            position: relative;
+            .offer{
+                color: inherit;
+                font-size: 20px;
+                font-weight: 500;
+                background-color: #171a29;
+                display: inline-block;
+                padding-right: 10px;
+                padding-bottom: 10px;
+                text-transform: uppercase;
+                position: absolute;
+                top: -13px;
+                left: -6px;
+            }
+            .offer-text{
+                padding: 20px 40px 20px 25px;
+                display: flex;
+                .offer-icon{
+                    margin-right: 10px;
+                     font-size: 22px;
+                }
+            }
+        }
+    }
+}
+.restaurant-body{
+    display: flex;
+    margin-top: 40px;
+    padding: 10px 20px;
+    .left{
+        flex: 1.3;
+        .menu-ul{
+            font-weight: 400; 
+            margin-left: 10px;
+            .menu-li{
+                margin-top: 2px;       
+                cursor: pointer;  
+                text-align: end;  
+            }
+            .menu-li:first-child{
+                margin-top: 0;
+
+            }
+            .menu-li:hover{
+                font-weight: 500;
+            }
+        }
+
+    }
+     .right{
+        flex: 1.3;
+    }
+    .middle{
+        flex: 2.5;
+        padding: 0px 80px;
+        .list-view{
+            border-bottom: 2px solid #282c3f;
+             margin-top: 10px;
+        }
+    }
+    .right{       
+        .items{
+            width: 100%;
+            margin-top: 20px;
+            .list{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 15px;
+                .item-name{
+                    font-size: 14px;
+                    font-weight: 400;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 120px;
+                }
+            }
+        }
+        .subtotal{
+            margin-top: 20px;
+            color: #3d4152;
+            font-size: 15px;
+            font-weight: 600;
+          
+            .total-amount-box{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .extra-charges-text{
+                font-size: 13px;
+                font-weight: 300;
+                color: #7e808c;
+                margin-top: 2px;
+            }
+        }
+        .checkout-button-box{
+            margin-top: 20px;
+            .checkoutButton{
+                border-radius: 0; 
+                width: 100%;
+                height: 50px;
+                background: #60b246;
+                color: #fff;
+                font-size: 16px;
+                text-transform: uppercase;
+            }
+        }
+    }
+}

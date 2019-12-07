@@ -1,0 +1,200 @@
+<div class="cart-container">
+
+    <div class="cart-container-box">
+        <div class="left-container-box">
+            <div class="child-box" *ngIf="!user">
+                <div>
+                    <h1>Account</h1>
+                    <span style="font-weight: 500; opacity: 0.6; font-size: 16px;">To place your order now, log in to
+                        your existing account or sign up.</span>
+                </div>
+                <div class="button-container">
+                    <div class="button-box">
+                        <button mat-raised-button class="default-button outline-success-button" style="width: 150px;" (click)="openLoginSideNav()">
+                            <span>LOG IN</span>
+                        </button>
+                    </div>
+                    <div class="button-box" style="margin-left: 20px;">
+                        <button mat-raised-button class="default-button success-button" style="width: 150px;" (click)="openLoginSideNav()">
+                            SIGN UP
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="child-box">
+                <div>
+                    <h1> Choose a delivery address</h1>
+                    <span style="font-weight: 500; opacity: 0.6; font-size: 16px;">
+                        Multiple addresses in this location
+                    </span>
+                </div>
+                <div class="address-box-container">
+                    <div class="address-box-card">
+                        <div class="address-box-header">
+                            <mat-icon fontSet="material-icons-outlined">home</mat-icon>
+                            <h3 style="font-weight: 500; margin-left: 10px">Home</h3>
+                        </div>
+                        <div class="address-box-footer">
+                            <span> F 103, 64 Green Meadows, Marunji Rd, Marunji Village, Hinjawadi, Marunji, Maharashtra
+                                411033, India</span>
+                            <div style="margin-top: 20px;">
+                                <span style="font-weight: 500; color: black; opacity: 1;">41 MINS</span>
+                                <div class="button-box">
+                                    <button mat-raised-button class="default-button success-button"
+                                        style="width: 150px; margin-top: 20px;">
+                                        <span>DELIVER HERE</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="address-box-card">
+                        <div class="address-box-header">
+                            <mat-icon fontSet="material-icons-outlined">work_outline</mat-icon>
+                            <h3 style="font-weight: 500; margin-left: 10px">Work</h3>
+                        </div>
+                        <div class="address-box-footer">
+                            <span> F 103, 64 Green Meadows, Marunji Rd, Marunji Village, Hinjawadi, Marunji, Maharashtra
+                                411033, India</span>
+                            <div style="margin-top: 20px;">
+                                <span style="font-weight: 500; color: black; opacity: 1;">41 MINS</span>
+                                <div class="button-box">
+                                    <button mat-raised-button class="default-button success-button"
+                                        style="width: 150px; margin-top: 20px;">
+                                        <span>DELIVER HERE</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="address-box-card">
+                        <div class="address-box-header">
+                            <mat-icon fontSet="material-icons-outlined">home</mat-icon>
+                            <h3 style="font-weight: 500; margin-left: 10px">Home</h3>
+                        </div>
+                        <div class="address-box-footer">
+                            <span> F 103, 64 Green Meadows, Marunji Rd, Marunji Village, Hinjawadi, Marunji, Maharashtra
+                                411033, India</span>
+                            <div style="margin-top: 20px;">
+                                <span style="font-weight: 500; color: black; opacity: 1;">41 MINS</span>
+                                <div class="button-box">
+                                    <button mat-raised-button class="default-button success-button"
+                                        style="width: 150px; margin-top: 20px;">
+                                        <span>DELIVER HERE</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="child-box">
+                <div>
+                    <h1>Choose payment method</h1>
+
+                </div>
+                <div class="second-view">
+                    <div class="body" style="padding: 0;">
+                        <div class="list-view">
+                            <div class="list-box">
+                                <ul>
+                                    <li class="item">
+                                        <mat-icon fontSet="material-icons-outlined" class="icon">
+                                            account_balance_wallet
+                                        </mat-icon>
+                                        <span class="text" style="margin-left: 10px;">Wallets</span>
+                                    </li>
+                                    <li class="item ">
+
+                                        <mat-icon fontSet="material-icons-outlined" class="icon">
+                                            credit_card
+                                        </mat-icon>
+                                        <span style="margin-left: 10px;" class="text">
+                                            Credit/Debit Cards
+                                        </span>
+                                    </li>
+                                    <li class="item active_item">
+                                        <mat-icon fontSet="material-icons-outlined" class="icon">
+                                            money
+                                        </mat-icon>
+                                        <span class="text" style="margin-left: 10px;">Pay on Delivery</span>
+                                    </li>
+                                    <li class="item">
+                                        <mat-icon fontSet="material-icons-outlined" class="icon">
+                                            credit_card
+                                        </mat-icon>
+                                        <span class="text" style="margin-left: 10px;">UPI</span>
+                                    </li>
+
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="result-view">
+                            <div class="result-box">
+                                <img class="_2tuBw _12_oN" width="140" height="80" alt=""
+                                    src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_140,h_80/image-pay-by-cash_av6bcw">
+                                <div style="margin-top: 30px;display: flex; flex-direction: column;">
+                                    <h3 style="font-weight: 400">Cash</h3>
+                                    <span style="margin-top: 10px; font-weight: 500; opacity: .5;">Please keep exact
+                                        change handy to help us serve you better</span>
+                                    <div class="button-box full-size-button-box">
+                                        <button mat-raised-button class="default-button success-button"
+                                            style="margin-top: 20px;">
+                                            <span>PAY ₹119</span>
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-container-box">
+            <div class="main-box">
+                <div class="cart-header">
+                    <div>
+                        <img  height="50" width="50" alt=""
+                            src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_100,h_100,c_fill/oyusdq7j4phsavmal7n0">
+                    </div>
+                    <div style="margin-left: 20px;">
+                        <h3 style="font-weight: 500;">Tamanna Cafeteria</h3>
+                        <span style="margin-top: 10px; font-weight: 500; opacity: 0.5;">Hinjewadi</span>
+                    </div>
+
+                </div>
+                <ul class="items">
+                    <li class="list" *ngFor="let item of items">
+                        <div class="item-name">
+                            <img src="https://img.icons8.com/color/15/000000/vegetarian-food-symbol.png">
+                            <span style="margin-left: 10px;">Paneer Tikka</span>
+                        </div>
+                        <div class="add-remove-box">
+                            <mat-icon class="star-icon" fontSet="material-icons-outlined">remove</mat-icon>
+                            <span>5</span>
+                            <mat-icon class="star-icon" fontSet="material-icons-outlined">add</mat-icon>
+                        </div>
+                        <div style="margin-left: 10px">₹ 1396</div>
+                    </li>
+                </ul>
+                <div class="subtotal">
+                    <div class="total-amount-box">
+                        <div>Total Pay</div>
+                        <div>
+                            ₹ 947
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

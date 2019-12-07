@@ -1,0 +1,39 @@
+.search-container{
+    margin-top: 80px;
+    max-width: 1200px;
+    min-width: 1200px;
+}
+
+.container-box{
+    width: 100%;
+    padding: 40px 20px;
+    display: flex;
+    .left{
+        flex: 1;
+    }
+    .middle{
+        flex: 6;
+        .search-box{            
+             width: 100%;
+             border-radius: 0;
+            .seach-input-text{
+                border: 0;
+                font-size: 20px;
+                color: #282c3f;
+                font-weight: 500;
+                padding: 20px 60px 20px 30px;
+                margin: 0;
+                width: 100%;
+                outline: none;
+                height: 2px;
+                caret-color: #fc8019;
+            }
+        }
+        .result-box{
+            margin-top: 30px;
+        }
+    }
+    .right{
+        flex: 1;
+    }
+}

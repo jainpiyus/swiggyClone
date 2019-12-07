@@ -1,0 +1,158 @@
+<div class="single-restaurant-container">
+
+    <div class="header-container">
+        <div class="img-box">
+            <img mat-card-image style="width: 100%;" alt=""
+                src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/x5zos2bebvlhbhkmi2ok">
+        </div>
+        <div class="description-box">
+            <div>
+                <h1 class="name">Name of Restaurant</h1>
+                <p style="margin-bottom: 0;">Megapolis Circle, Hinjewadi Phase-3</p>
+
+            </div>
+            <div class="rating-box">
+                <div class="box">
+                    <div class="upper-box">
+                        <mat-icon class="star-icon" fontSet="material-icons-outlined">star</mat-icon>
+                        <span>4.1</span>
+                    </div>
+                    <div class="lower-box">
+                        <span>
+                            500+ Rating
+                        </span>
+                    </div>
+
+                </div>
+                <div class="box">
+                    <div class="upper-box"> 48 mins</div>
+                    <div class="lower-box">Delivery Time</div>
+                </div>
+                <div class="box">
+                    <div class="upper-box">₹ 200</div>
+                    <div class="lower-box">Cost for two</div>
+                </div>
+            </div>
+        </div>
+        <div class="offer-box">
+            <div class="container">
+                <div class="offer">
+                    Offer
+                </div>
+                <div class="offer-text">
+                    <mat-icon class="offer-icon" fontSet="material-icons-outlined">local_offer</mat-icon>
+                    <div>
+                        30% off up to ₹75 on orders above ₹99 | Use coupon SWIGGY30
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="restaurant-body">
+        <div class="left">
+            <mat-accordion displayMode="flat">
+                <mat-expansion-panel [disabled]="true">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Recommended
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                </mat-expansion-panel>
+                <mat-expansion-panel [disabled]="true">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Starters
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                </mat-expansion-panel>
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <span class="menu-header">Quick Bites</span>
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+
+                    <ul class="menu-ul">
+                        <li class="menu-li">Chaats</li>
+                    </ul>
+                </mat-expansion-panel>
+
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Beverages
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+
+                    <ul class="menu-ul">
+                        <li class="menu-li">Cold Beverages</li>
+                        <li class="menu-li">Hot Beverages</li>
+                        <li class="menu-li">Fresh Fruit Juices</li>
+                    </ul>
+                </mat-expansion-panel>
+            </mat-accordion>
+        </div>
+        <div class="middle">
+            <div class="list-view">
+                <h1 style="margin: 0;">Recommended</h1>
+                <span class="total-items">14 ITEMS</span>
+                <div class="mini-card-container">
+                    <div class="mini-card" *ngFor="let item of itemList">
+                        <div>
+                            <img height="160" width="244" alt=""
+                                src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_366,h_240,c_fill/jb72srvfsyzsklvt8gkn">
+                        </div>
+                        <div class="item">
+                            <img src="https://img.icons8.com/color/18/000000/vegetarian-food-symbol.png">
+                            <span style="margin-left: 5px;">Idli Sambar (2 Pcs)</span>
+                        </div>
+                        <div class="botom">
+                            <div>₹50</div>
+                            <div class="add-remove-box">
+                                <mat-icon class="star-icon" fontSet="material-icons-outlined">remove</mat-icon>
+                                <span>5</span>
+                                <mat-icon class="star-icon" fontSet="material-icons-outlined">add</mat-icon>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <h1 style="margin:0">Cart</h1>
+            <div>from <span style="font-weight: 600; color: #5d8ed5;">Name of restaurant</span></div>
+            <div class="total-items">3 ITEMS</div>
+            <ul class="items">
+                <li class="list" *ngFor="let item of itemList">
+                    <div class="item-name">
+                        <img src="https://img.icons8.com/color/15/000000/vegetarian-food-symbol.png">
+                        <span style="margin-left: 10px;">Nawabi Paneer Tikka</span>
+                    </div>
+                    <div class="add-remove-box">
+                        <mat-icon class="star-icon" fontSet="material-icons-outlined">remove</mat-icon>
+                        <span>5</span>
+                        <mat-icon class="star-icon" fontSet="material-icons-outlined">add</mat-icon>
+                    </div>
+                    <div style="margin-left: 10px">₹ 1396</div>
+                </li>
+            </ul>
+            <div class="subtotal">
+                <div class="total-amount-box">
+                    <div>Subtotal</div>
+                    <div>
+                        ₹ 947
+                    </div>
+
+                </div>
+                <div class="extra-charges-text">Extra charges may apply</div>
+                <div class="checkout-button-box">
+                    <button mat-raised-button class="checkoutButton">CHECKOUT <mat-icon class="star-icon"
+                            style="margin-top: 2px;" fontSet="material-icons-outlined">arrow_right_alt</mat-icon>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

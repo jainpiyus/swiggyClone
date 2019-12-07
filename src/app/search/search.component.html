@@ -1,0 +1,124 @@
+<div class="search-container">
+    <div class="container-box">
+        <div class="left"></div>
+        <div class="middle">
+            <mat-form-field appearance="outline" class="search-box">
+                <input matInput placeholder="Seach For Restaurant Or Dishes" class="seach-input-text">
+                <button mat-button matSuffix mat-icon-button aria-label="Clear"
+                    style="top: -10px; right: 10px; font-size: 16px; font-weight: 500">
+                    <mat-icon>close</mat-icon>
+                </button>
+                <button mat-button matPrefix mat-icon-button aria-label="Clear"
+                    style="top: -10px; left: 20px; font-size: 16px; font-weight: 500">
+                    <mat-icon fontSet="material-icons-outlined">search</mat-icon>
+                </button>
+            </mat-form-field>
+            <div class="result-box">
+                <mat-tab-group>
+                    <mat-tab label="Restaurant">
+                        <div style="margin-top: 10px">
+                            <div class="card-container">
+                                <ng-container  *ngIf="restaurants.length == 0">
+                                    <skltn-root class="card" duration="1000" [rectRadius]="10" flareWidth="50%"
+                                        bgFill="#d8d5d1" flareFill="rgba(255,255,255, 0.5)">
+                                        <!-- Card with Avatar -->
+                                        <div class="skltn-card">
+                                            <div skltn-bone class="skltn-card__avatar" type="circle"></div>
+                                            <div class="skltn-card__body">
+                                                <div skltn-bone class="skltn-card__title"></div>
+                                                <div skltn-bone class="skltn-card__line"></div>
+                                                <div skltn-bone class="skltn-card__line"></div>
+                                            </div>
+                                        </div>
+                                    </skltn-root>
+                                    <skltn-root class="card" duration="1000" [rectRadius]="10" flareWidth="50%"
+                                        bgFill="#d8d5d1" flareFill="rgba(255,255,255, 0.5)">
+                                        <!-- Card with Avatar -->
+                                        <div class="skltn-card">
+                                            <div skltn-bone class="skltn-card__avatar" type="circle"></div>
+                                            <div class="skltn-card__body">
+                                                <div skltn-bone class="skltn-card__title"></div>
+                                                <div skltn-bone class="skltn-card__line"></div>
+                                                <div skltn-bone class="skltn-card__line"></div>
+                                            </div>
+                                        </div>
+                                    </skltn-root>
+                                    <skltn-root class="card" duration="1000" [rectRadius]="10" flareWidth="50%"
+                                        bgFill="#d8d5d1" flareFill="rgba(255,255,255, 0.5)">
+                                        <!-- Card with Avatar -->
+                                        <div class="skltn-card">
+                                            <div skltn-bone class="skltn-card__avatar" type="circle"></div>
+                                            <div class="skltn-card__body">
+                                                <div skltn-bone class="skltn-card__title"></div>
+                                                <div skltn-bone class="skltn-card__line"></div>
+                                                <div skltn-bone class="skltn-card__line"></div>
+                                            </div>
+                                        </div>
+                                    </skltn-root>
+                                </ng-container>
+                                <div class="card" *ngFor="let restaurant of restaurants" (click)="goToRestaurant(id)">
+                                    <div>
+                                        <img alt="Ancient Hyderabad" width="254" height="160" [src]="restaurant.image">
+                                    </div>
+                                    <div class="footer">
+                                        <div>
+                                            <div class="name">{{restaurant.name}}</div>
+                                            <div class="address">{{restaurant.foodType}}</div>
+                                        </div>
+                                        <div class="other">
+                                            <div class="rating">
+                                                <mat-icon class="star-icon">star</mat-icon>
+                                                <span class="rate">{{restaurant.rating}}</span>
+                                            </div>
+                                            <div>&#8226;</div>
+                                            <div>32 MINS</div>
+                                            <div>&#8226;</div>
+                                            <div>250 For Two</div>
+                                        </div>
+                                        <div class="offer">
+                                            <mat-icon class="offer-icon" fontSet="material-icons-outlined">local_offer
+                                            </mat-icon>
+                                            <span class="offer-description">40% off | Use coupon SWIGGY40</span>
+                                        </div>
+                                        <!-- <div class="quick-view">
+                                                <span>Quick Order</span>
+                                            </div> -->
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </mat-tab>
+                    <mat-tab label="Dishes">
+                        <div style="margin-top: 10px">
+                            <div class="mini-card-container">
+                                <div class="mini-card" *ngFor="let item of itemList">
+                                    <div>
+                                        <img height="160" width="244" alt=""
+                                            src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_366,h_240,c_fill/jb72srvfsyzsklvt8gkn">
+                                    </div>
+                                    <div class="item">
+                                        <img src="https://img.icons8.com/color/18/000000/vegetarian-food-symbol.png">
+                                        <span style="margin-left: 5px;">Idli Sambar (2 Pcs)</span>
+                                    </div>
+                                    <div class="botom">
+                                        <div>₹50</div>
+                                        <div class="add-remove-box">
+                                            <mat-icon class="star-icon" fontSet="material-icons-outlined">remove
+                                            </mat-icon>
+                                            <span>5</span>
+                                            <mat-icon class="star-icon" fontSet="material-icons-outlined">add</mat-icon>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </mat-tab>
+                </mat-tab-group>
+            </div>
+        </div>
+        <div class="right"></div>
+    </div>
+
+</div>

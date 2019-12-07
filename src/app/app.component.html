@@ -1,0 +1,24 @@
+<!-- <mat-drawer-container hasBackdrop="true" class="example-container">
+
+    <mat-drawer #drawer class="example-sidenav" mode="over" style=" overflow: hidden;">
+        I'm a drawer
+    </mat-drawer>
+    <button mat-raised-button (click)="drawer.toggle()">Toggle drawer</button>
+     <app-header></app-header> 
+    <router-outlet></router-outlet>
+    <app-footer></app-footer>
+</mat-drawer-container>
+ -->
+
+<mat-sidenav-container class="example-container" autosize>
+    <mat-sidenav mode="over" [(opened)]= "addressNavEnable">
+        <app-select-address></app-select-address>
+    </mat-sidenav>
+    <mat-sidenav mode="over" [(opened)]= "loginSideNavEnable" position="end">
+        <app-login *ngIf="enableAccount == 'signin'"></app-login>
+        <app-signup *ngIf="enableAccount == 'signup'"> </app-signup>        
+    </mat-sidenav>
+    <app-header></app-header>
+    <router-outlet></router-outlet>
+    <app-footer></app-footer>
+</mat-sidenav-container>

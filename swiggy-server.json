@@ -1,0 +1,101 @@
+{
+    "restaurants": [
+        {
+            "id": 1,
+            "name": "Tamanna Cafeteria",
+            "address": "Marunji, Hinjewadi",
+            "foodType": "Street Food, South Indian, Fast Food",
+            "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/oyusdq7j4phsavmal7n0",
+            "rating": 4.1
+        },
+        {
+            "id": 2,
+            "name": "LunchBox",
+            "address": "Hinjewadi, Hinjewadi",
+            "foodType": "North Indian, Chinese, Desserts, Biryani",
+            "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/mvg8s04aefbxupesos8x",
+            "rating": 4.1
+        },
+        {
+            "id": 3,
+            "name": "Tamanna Cafeteria",
+            "address": "Bhagwan Nagar, Wakad",
+            "foodType": "Street Food, South Indian, Fast Food",
+            "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/p6nyjevqkca8fpuarzgl",
+            "rating": 4.1
+        },
+        {
+            "id": 4,
+            "name": "Hotel Sonam",
+            "address": "Bhujbal Wasti, Wakad, Wakad",
+            "foodType": "South Indian, Fast Food, North Indian",
+            "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/urrvwargoh0njy1etozf",
+            "rating": 4.5
+        },
+        {
+            "id": 5,
+            "name": "Tamanna Cafeteria",
+            "address": "Marunji, Hinjewadi",
+            "foodType": "Street Food, South Indian, Fast Food",
+            "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/oyusdq7j4phsavmal7n0",
+            "rating": 4.1
+        },
+        {
+            "id": 6,
+            "name": "LunchBox",
+            "address": "Hinjewadi, Hinjewadi",
+            "foodType": "North Indian, Chinese, Desserts, Biryani",
+            "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/mvg8s04aefbxupesos8x",
+            "rating": 4.1
+        },
+        {
+            "id": 7,
+            "name": "Tamanna Cafeteria",
+            "address": "Bhagwan Nagar, Wakad",
+            "foodType": "Street Food, South Indian, Fast Food",
+            "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/p6nyjevqkca8fpuarzgl",
+            "rating": 4.1
+        },
+        {
+            "id": 8,
+            "name": "Hotel Sonam",
+            "address": "Bhujbal Wasti, Wakad, Wakad",
+            "foodType": "South Indian, Fast Food, North Indian",
+            "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/urrvwargoh0njy1etozf",
+            "rating": 4.5
+        },
+        {
+            "id": 9,
+            "name": "Hotel Sonam",
+            "address": "Bhujbal Wasti, Wakad, Wakad",
+            "foodType": "South Indian, Fast Food, North Indian",
+            "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/urrvwargoh0njy1etozf",
+            "rating": 4.5
+        },
+        {
+            "id": 10,
+            "name": "Tamanna Cafeteria",
+            "address": "Marunji, Hinjewadi",
+            "foodType": "Street Food, South Indian, Fast Food",
+            "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/oyusdq7j4phsavmal7n0",
+            "rating": 4.1
+        },
+        {
+            "id": 11,
+            "name": "LunchBox",
+            "address": "Hinjewadi, Hinjewadi",
+            "foodType": "North Indian, Chinese, Desserts, Biryani",
+            "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/mvg8s04aefbxupesos8x",
+            "rating": 4.1
+        },
+        {
+            "id": 12,
+            "name": "Tamanna Cafeteria",
+            "address": "Bhagwan Nagar, Wakad",
+            "foodType": "Street Food, South Indian, Fast Food",
+            "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/p6nyjevqkca8fpuarzgl",
+            "rating": 4.1
+        }
+      
+    ]
+}

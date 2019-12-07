@@ -1,0 +1,30 @@
+<div class="login-container">
+    <div class="nav-close-button-box">
+        <button mat-button matSuffix mat-icon-button aria-label="Clear" (click)="closeLoginNav()">
+            <mat-icon>close</mat-icon>
+        </button>
+    </div>
+    <div class="login-title">
+        <div class="login-title-text">
+            <h1 style="font-weight: 500;">Login</h1>
+            <div style="margin-top: 5px; font-weight: 500">or <a style="color: #fc8019; cursor: pointer;" (click)="signupEnable()">create an account</a></div>
+        </div>
+        <div class="login-title-img">
+            <img width="100" height="105" alt=""
+                src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/Image-login_btpq7r">
+        </div>
+    </div>
+    <div class="login-body"  style="overflow-x: hidden;"> 
+        <div class="login-input-box">
+            <mat-form-field appearance="outline" class="input-box">
+                    <mat-label>Name</mat-label>
+                <input matInput placeholder="Name" class="input-text">
+            </mat-form-field>
+        </div>
+        <div class="login-submit-button">
+            <div class="button-box">
+                <button mat-raised-button class="default-button" (click)= "login()">LOGIN</button>
+            </div>
+        </div>
+    </div>
+</div>

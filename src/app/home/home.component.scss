@@ -1,0 +1,28 @@
+.home-container{
+    margin-top: 80px;
+    width: 100%;
+}
+.slider{
+    position: relative;
+    margin: 0 auto;
+    height: 340px;
+    padding: 0 20px;
+    background-color: #171a29;
+    contain: content;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .img-box{
+        transition: 0.5s;
+        cursor: pointer;
+    }
+    .img-box:hover{
+        transform: scale(1.05);
+    }
+}
+.title{
+    margin-top: 40px;
+    margin-bottom: 10px;
+    
+    padding: 0 30px;
+}

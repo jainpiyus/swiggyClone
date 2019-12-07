@@ -1,0 +1,31 @@
+.login-container{
+    padding: 30px;
+    width: 397px;
+    display: flex;
+    flex-direction: column;
+    .login-title{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .login-body{
+        margin-top: 15px;
+      
+    }
+}
+
+.input-box{
+    width: 100%;
+    .input-text{
+        border: 0;
+        font-size: 16px;
+        color: #282c3f;
+        font-weight: 500;
+        padding: 10px 50px 10px 20px;
+        margin: 0;
+        width: 100%;
+        outline: none;
+        height: 3px;
+        caret-color: #fc8019;
+    }
+}
