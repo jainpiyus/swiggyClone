@@ -18,7 +18,9 @@
         <app-login *ngIf="enableAccount == 'signin'"></app-login>
         <app-signup *ngIf="enableAccount == 'signup'"> </app-signup>        
     </mat-sidenav>
+ 
     <app-header></app-header>
+    
     <router-outlet></router-outlet>
     <app-footer></app-footer>
 </mat-sidenav-container>

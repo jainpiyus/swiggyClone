@@ -9,6 +9,7 @@ import { RestaurantsService } from '../services/restaurants.service';
 })
 export class HomeComponent implements OnInit {
   itemList = new Array(4);
+  restaurants: any[];
   constructor(private router: Router, private restaurantService: RestaurantsService) { 
     this.restaurantService.getAllRestaurants().subscribe(res=>{
       this.restaurants = res;

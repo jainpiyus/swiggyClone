@@ -1,73 +1,79 @@
 <div class="home-container">
-    <div class="slider">
-        <div class="img-box">
-            <img width="260" height="260"
-                src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/jgpy5pwvor7gtfw6qv8r">
-        </div>
-        <div class="img-box">
-            <img width="260" height="260"
-                src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/gdbzrjqdeqllucpzn6pe">
-        </div>
-        <div class="img-box">
-            <img width="260" height="260"
-                src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/tcvxgt0j8fphiktdv8ye">
-        </div>
-        <div class="img-box">
-            <img width="260" height="260"
-                src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/vcfdjsyqabgfglw6ohcv">
-        </div>
-    </div>
-    <div class="title">
-        <h1>Offers Near You</h1>
-    </div>
-
-    <div class="card-container">
-        <ng-container *ngIf="restaurants.length == 0">
-            <skltn-root class="card" duration="1000" [rectRadius]="10" flareWidth="50%" bgFill="#d8d5d1"
-                flareFill="rgba(255,255,255, 0.5)" *ngFor="let item of loaderRestaurant">
-                <!-- Card with Avatar -->
-                <div class="skltn-card">
-                    <div skltn-bone class="skltn-card__avatar" type="circle"></div>
-                    <div class="skltn-card__body">
-                        <div skltn-bone class="skltn-card__title"></div>
-                        <div skltn-bone class="skltn-card__line"></div>
-                        <div skltn-bone class="skltn-card__line"></div>
-                    </div>
-                </div>
-            </skltn-root>
-        </ng-container>
-
-        <div class="card" *ngFor="let restaurant of restaurants" (click)="goToRestaurant(id)">
-            <div>
-                <img alt="Ancient Hyderabad" width="254" height="160" [src]="restaurant.image">
-                <div class="exclusive"
-                    style="background: rgb(250, 74, 91); color: rgb(255, 255, 255);border-color: rgb(209, 42, 59) transparent;">
-                    exclusive
-                </div>
+    <div class="slider-background">
+        <div class="slider container">
+            <div class="img-box">
+                <img width="260" height="260"
+                    src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/jgpy5pwvor7gtfw6qv8r">
             </div>
-            <div class="footer">
+            <div class="img-box">
+                <img width="260" height="260"
+                    src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/gdbzrjqdeqllucpzn6pe">
+            </div>
+            <div class="img-box">
+                <img width="260" height="260"
+                    src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/tcvxgt0j8fphiktdv8ye">
+            </div>
+            <div class="img-box">
+                <img width="260" height="260"
+                    src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/vcfdjsyqabgfglw6ohcv">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="title">
+            <h1>Offers Near You</h1>
+        </div>
+
+        <div class="card-container">
+            <ng-container *ngIf="restaurants.length == 0">
+                <skltn-root class="card" duration="1000" [rectRadius]="10" flareWidth="50%" bgFill="#d8d5d1"
+                    flareFill="rgba(255,255,255, 0.5)" *ngFor="let item of loaderRestaurant">
+                    <!-- Card with Avatar -->
+                    <div class="skltn-card">
+                        <div skltn-bone class="skltn-card__avatar" type="circle"></div>
+                        <div class="skltn-card__body">
+                            <div skltn-bone class="skltn-card__title"></div>
+                            <div skltn-bone class="skltn-card__line"></div>
+                            <div skltn-bone class="skltn-card__line"></div>
+                        </div>
+                    </div>
+                </skltn-root>
+            </ng-container>
+
+            <div class="card" *ngFor="let restaurant of restaurants" (click)="goToRestaurant(id)">
                 <div>
-                    <div class="name">{{restaurant.name}}</div>
-                    <div class="address">{{restaurant.foodType}}</div>
-                </div>
-                <div class="other">
-                    <div class="rating">
-                        <mat-icon class="star-icon">star</mat-icon>
-                        <span class="rate">{{restaurant.rating}}</span>
+                    <img alt="Ancient Hyderabad" width="254" height="160" [src]="restaurant.image">
+                    <div class="exclusive"
+                        style="background: rgb(250, 74, 91); color: rgb(255, 255, 255);border-color: rgb(209, 42, 59) transparent;">
+                        exclusive
                     </div>
-                    <div>&#8226;</div>
-                    <div>32 MINS</div>
-                    <div>&#8226;</div>
-                    <div>250 For Two</div>
                 </div>
-                <div class="offer">
-                    <mat-icon class="offer-icon" fontSet="material-icons-outlined">local_offer</mat-icon>
-                    <span class="offer-description">40% off | Use coupon SWIGGY40</span>
-                </div>
+                <div class="footer">
+                    <div>
+                        <div class="name">{{restaurant.name}}</div>
+                        <div class="address">{{restaurant.foodType}}</div>
+                    </div>
+                    <div class="other">
+                        <div class="rating">
+                            <mat-icon class="star-icon">star</mat-icon>
+                            <span class="rate">{{restaurant.rating}}</span>
+                        </div>
+                        <div>&#8226;</div>
+                        <div>32 MINS</div>
+                        <div>&#8226;</div>
+                        <div>250 For Two</div>
+                    </div>
+                    <div class="offer">
+                        <mat-icon class="offer-icon" fontSet="material-icons-outlined">local_offer</mat-icon>
+                        <span class="offer-description">40% off | Use coupon SWIGGY40</span>
+                    </div>
 
+                </div>
             </div>
-        </div>
 
+        </div>
     </div>
+
 
 </div>

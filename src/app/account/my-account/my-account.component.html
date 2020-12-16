@@ -1,6 +1,6 @@
-<div class="myaccount-container">
+<div class="myaccount-container ">
     <div class="myaccount-container-body second-view">
-        <div class="secondary-container-header">
+        <div class="secondary-container-header container">
             <div class="header-text">
                 <h1 class="primary-text">Piyush Jain</h1>
                 <span class="secondary-text">
@@ -12,8 +12,8 @@
                 <button mat-raised-button class="edit-button-text">Edit Profile</button>
             </div>
         </div>
-        <div class="body">
-            <div class="list-view">
+        <div class="body container">
+            <div class="list-view ">
                 <div class="list-box">
                     <ul>
                         <li class="item" [ngClass]="{'active_item': currentRoute == 'orders' }" (click)="changeChildRoute('orders')" [routerLink]="['/my-account/orders']" routerLinkActive="active">

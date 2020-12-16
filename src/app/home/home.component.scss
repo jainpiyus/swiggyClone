@@ -2,12 +2,15 @@
     margin-top: 80px;
     width: 100%;
 }
+.slider-background {
+    background-color: #171a29;
+}
+
 .slider{
     position: relative;
     margin: 0 auto;
     height: 340px;
     padding: 0 20px;
-    background-color: #171a29;
     contain: content;
     display: flex;
     justify-content: space-around;
